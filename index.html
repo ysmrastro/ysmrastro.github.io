@@ -1,10 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta http-equiv="refresh" content="0; url=/numanohotori/">
-  <link rel="canonical" href="https://ysmrastro.github.io/numanohotori/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ysmrastro</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #e6edf3;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: #8b949e;
+      margin-bottom: 3rem;
+      font-size: 1rem;
+    }
+
+    .cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 700px;
+    }
+
+    .card {
+      display: block;
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 2rem;
+      width: 300px;
+      text-decoration: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      border-color: #7eb8da;
+      box-shadow: 0 0 15px rgba(126, 184, 218, 0.15);
+    }
+
+    .card h2 {
+      color: #7eb8da;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #8b949e;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: #484f58;
+      font-size: 0.8rem;
+    }
+
+    footer a {
+      color: #7eb8da;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <p><a href="/numanohotori/">沼のほとりへ移動</a></p>
+  <h1>ysmrastro</h1>
+  <p class="subtitle">ASTRONOMY FAN</p>
+
+  <div class="cards">
+    <a href="/numanohotori/" class="card">
+      <h2>沼のほとり</h2>
+      <p>星空をゆるく楽しむブログ。天体写真や機材の話題を中心に。</p>
+    </a>
+    <a href="/pixinsight-repo/" class="card">
+      <h2>PixInsight Scripts</h2>
+      <p>PixInsight 用の自作スクリプト。Manual Image Solver など。</p>
+    </a>
+  </div>
+
+  <footer>
+    <a href="https://github.com/ysmrastro">GitHub</a>
+  </footer>
 </body>
 </html>
